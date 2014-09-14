@@ -6,6 +6,7 @@
     "jquery": "~1.10.2",
     "modernizr": "~2.7",
     "fontawesome": "~4.2.0",
-    "bootstrap": "~3.2.0"
+    "bootstrap": "~3.2.0",
+    "jquery-masonry": "~3.1.5"
   }
 }
