@@ -13,22 +13,22 @@
 }
 
 .blog_masonry_3col h3 {
-	font-size: 20px; 
+	font-size: 20px;
 	font-weight: 200;
 	line-height: 30px;
 }
 
-.blog_masonry_3col h3 a {
+/*.blog_masonry_3col h3 a {
 	color: #555;
-}
+}*/
 
-.blog_masonry_3col h3 a:hover {
+/*.blog_masonry_3col h3 a:hover {
 	color: #72c02c;
-}
+}*/
 
-.blog_masonry_3col h3 a:hover {
+/*.blog_masonry_3col h3 a:hover {
 	color: #72c02c;
-}
+}*/
 
 .blog_masonry_3col ul.grid-boxes-news {
 	margin-bottom: 15px;
@@ -38,14 +38,14 @@
 	font-size: 12px;
 }
 
-.blog_masonry_3col ul.grid-boxes-news li,
+/*.blog_masonry_3col ul.grid-boxes-news li,
 .blog_masonry_3col ul.grid-boxes-news li a {
 	color: #777;
-}
+}*/
 
-.blog_masonry_3col ul.grid-boxes-news li a:hover {
+/*.blog_masonry_3col ul.grid-boxes-news li a:hover {
 	color: #72c02c;
-}
+}*/
 
 /*Quote Block*/
 .grid-boxes-caption.grid-boxes-quote {
@@ -80,10 +80,8 @@
 	font-weight: 200;
 	font-family: "Open Sans";
 	text-transform: uppercase;
-}	
+}
 
 .grid-boxes-quote span {
 	font-size: 12px;
 }
-
-

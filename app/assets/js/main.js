@@ -1,32 +1,63 @@
-/**
-* Base js functions
-*/
+/*
+ * Template Name: Unify - Responsive Bootstrap Template
+ * Description: Business, Corporate, Portfolio and Blog Theme.
+ * Version: 1.4
+ * Author: @htmlstream
+ * Website: http://htmlstream.com
+ */
 
-// $(document).ready(function(){
-//   var $container = $('.grid-boxes');
+// var App = function () {
 //
-//   var gutter = 30;
-//   var min_width = 300;
-//   $container.imagesLoaded( function(){
-//     $container.masonry({
-//       itemSelector : '.grid-boxes-in',
-//       gutterWidth: gutter,
-//       isAnimated: true,
-//       columnWidth: function( containerWidth ) {
-//         var box_width = (((containerWidth - 2*gutter)/3) | 0) ;
+//   function handleIEFixes() {
+//     //fix html5 placeholder attribute for ie7 & ie8
+//     if (jQuery.browser.msie && jQuery.browser.version.substr(0, 1) < 9) { // ie7&ie8
+//       jQuery('input[placeholder], textarea[placeholder]').each(function () {
+//         var input = jQuery(this);
 //
-//         if (box_width < min_width) {
-//           box_width = (((containerWidth - gutter)/2) | 0);
-//         }
+//         jQuery(input).val(input.attr('placeholder'));
 //
-//         if (box_width < min_width) {
-//           box_width = containerWidth;
-//         }
+//         jQuery(input).focus(function () {
+//           if (input.val() == input.attr('placeholder')) {
+//             input.val('');
+//           }
+//         });
 //
-//         $('.grid-boxes-in').width(box_width);
+//         jQuery(input).blur(function () {
+//           if (input.val() == '' || input.val() == input.attr('placeholder')) {
+//             input.val(input.attr('placeholder'));
+//           }
+//         });
+//       });
+//     }
+//   }
 //
-//         return box_width;
-//       }
+//   function handleBootstrap() {
+//     /*Bootstrap Carousel*/
+//     jQuery('.carousel').carousel({
+//       interval: 15000,
+//       pause: 'hover'
 //     });
-//   });
-// });
+//
+//     /*Tooltips*/
+//     jQuery('.tooltips').tooltip();
+//     jQuery('.tooltips-show').tooltip('show');
+//     jQuery('.tooltips-hide').tooltip('hide');
+//     jQuery('.tooltips-toggle').tooltip('toggle');
+//     jQuery('.tooltips-destroy').tooltip('destroy');
+//
+//     /*Popovers*/
+//     jQuery('.popovers').popover();
+//     jQuery('.popovers-show').popover('show');
+//     jQuery('.popovers-hide').popover('hide');
+//     jQuery('.popovers-toggle').popover('toggle');
+//     jQuery('.popovers-destroy').popover('destroy');
+//   }
+//
+//   return {
+//     init: function () {
+//       handleBootstrap();
+//       handleIEFixes();
+//     },
+//   };
+//
+// }();

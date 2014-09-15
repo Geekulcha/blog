@@ -1,11 +1,33 @@
 ---
 layout: default
-title: Your New Jekyll Site
+title: Blog
 ---
 
-<section class="home posts">
+<!-- <section class="home posts">
   <h1>Blog Posts</h1>
   {% for post in site.posts %}
     <article><time>{{ post.date | date_to_string }}</time> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></article>
   {% endfor %}
-</section>
+</section> -->
+
+
+<div class="blog_masonry_3col">
+  <div class="container content grid-boxes">
+    {% for post in site.posts %}
+      <div class="grid-boxes-in">
+        <img class="img-responsive" src="assets/img/masonry/blog3.jpg" alt="">
+        <div class="grid-boxes-caption">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <ul class="list-inline grid-boxes-news">
+            <li><span>By</span> <a href="#">Kathy Reyes</a></li>
+            <li>|</li>
+            <li><i class="fa fa-clock-o"></i> {{ post.date | date_to_string }}</li>
+            <li>|</li>
+            <li><a href="#"><i class="fa fa-comments-o"></i> 06</a></li>
+          </ul>
+          <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
