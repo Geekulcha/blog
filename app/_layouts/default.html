@@ -10,22 +10,30 @@
     <title>{{ page.title }} - Geekulcha | Young. Talented. Skilled. Creative. Ambitious</title>
     <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
 
-    <!-- build:css(app) /assets/css/vendor.css -->
+    <!-- build:css(app) /css/vendor.css -->
+    <!-- endbuild -->
     <link rel="stylesheet" href="/_bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/_bower_components/fontawesome/css/font-awesome.min.css">
-    <!-- endbuild -->
 
-    <!-- build:css(app) /assets/css/main.css -->
-    <link rel="stylesheet" href="/assets/css/syntax.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/unify/blog_masonry_3col.css">
-    <link rel="stylesheet" href="/assets/css/unify/theme.css">
+    <!-- build:css(app) /css/global-plugins.css -->
     <!-- endbuild -->
+    <link rel="stylesheet" href="/css/unify/app.css">
+    <link rel="stylesheet" href="/css/unify/ie8.css">
+    <link rel="stylesheet" href="/css/unify/plugins/animate.css">
+    <link rel="stylesheet" href="/css/unify/plugins/box-shadows.css">
 
-    <!-- build:js(app) /assets/js/head-scripts.js -->
+    <!-- build:css(app) /css/main.css -->
+    <!-- endbuild -->
+    <link rel="stylesheet" href="/css/syntax.css">
+    <link rel="stylesheet" href="/css/spinner.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/unify/blog_masonry_3col.css">
+    <link rel="stylesheet" href="/css/unify/theme.css">
+
+    <!-- build:js(app) /js/head-scripts.js -->
+    <!-- endbuild -->
     <!-- Replace with a custom modernizer build for production -->
     <script src="/_bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 
   </head>
   <body>
@@ -36,7 +44,7 @@
 
     {{ content }}
 
-    {% include footer.html %}
+    <!-- {% include footer.html %} -->
 
     {% include scripts.html %}
     {% include googleanalytics.html %}

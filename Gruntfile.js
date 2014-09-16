@@ -141,7 +141,7 @@ module.exports = function (grunt) {
       options: {
         dest: '<%= yeoman.dist %>'
       },
-      html: '<%= yeoman.dist %>/index.html'
+      html: '<%= yeoman.dist %>/**/*.html'
     },
     usemin: {
       options: {
@@ -211,12 +211,21 @@ module.exports = function (grunt) {
             // Jekyll processes and moves HTML and text files.
             // Usemin moves CSS and javascript inside of Usemin blocks.
             // Copy moves asset files and directories.
+            'css/**/*',
+            'js/**/*',
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
+            '_bower_components/bootstrap/dist/css/bootstrap.min.css',
+            '_bower_components/fontawesome/css/font-awesome.min.css',
+            '_bower_components/fontawesome/fonts/*.*',
             '_bower_components/jquery/jquery.js',
+            '_bower_components/modernizr/modernizr.js',
+            '_bower_components/jquery-migrate/jquery-migrate.min.js',
+            '_bower_components/bootstrap/dist/js/bootstrap.min.js',
+            '_bower_components/jquery-masonry/dist/masonry.pkgd.min.js',
             'favicon.ico',
             'apple-touch*.png'
           ],
@@ -241,10 +250,10 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           src: [
-            '<%= yeoman.dist %>/js/**/*.js',
-            '<%= yeoman.dist %>/css/**/*.css',
-            '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+            // '<%= yeoman.dist %>/js/**/*.js',
+            // '<%= yeoman.dist %>/css/**/*.css',
+            // '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+            // '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]
       }
@@ -332,14 +341,14 @@ module.exports = function (grunt) {
     'jekyll:dist',
     'concurrent:dist',
     'useminPrepare',
-    'concat',
+    // 'concat',
     'autoprefixer:dist',
     'cssmin',
     'uglify',
     'imagemin',
     'svgmin',
     'filerev',
-    'usemin',
+    // 'usemin',
     'htmlmin'
     ]);
 
