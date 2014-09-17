@@ -23,6 +23,9 @@ permalink: /:title
 # paginate: 10
 paginate_path: 'page:num'
 
+url: 'http://geekulcha.github.io'
+baseurl: '/blog'
+
 # Markdown library
 markdown: kramdown
 #   auto_ids: true
