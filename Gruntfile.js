@@ -227,7 +227,8 @@ module.exports = function (grunt) {
             '_bower_components/bootstrap/dist/js/bootstrap.min.js',
             '_bower_components/jquery-masonry/dist/masonry.pkgd.min.js',
             'favicon.ico',
-            'apple-touch*.png'
+            'apple-touch*.png',
+            'CNAME'
           ],
           dest: '<%= yeoman.dist %>'
         }]
